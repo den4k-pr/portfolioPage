@@ -8,10 +8,8 @@ function scrollToBottom(distance = 200) {
     const windowHeight = window.innerHeight;
     const documentHeight = document.body.scrollHeight;
 
-    // Обчислюємо відстань від низу сторінки, до якої потрібно прокрутити
     const scrollTo = documentHeight - windowHeight - distance;
 
-    // Прокручуємо сторінку до потрібної позиції
     window.scrollTo({
       top: scrollTo,
       behavior: 'smooth',
@@ -34,3 +32,10 @@ function scrollToElement(id) {
     headerList.classList.remove("burgerActive")
     burgerButton.classList.remove("burgerActive")
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const loader = document.querySelector('.loader')
+    loader.classList.add('closePreloader')
+  }, 1500)
+})
