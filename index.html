@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/animation.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/nulstyle.css">
+    <title>Portfolio | React Developer</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <p class="header__logo">Portfolio.</p>
+            <div class="header__burger" id="burgerButton">
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+            </div>
+            <ul class="header__list" id="headerList">
+                <li onclick="scrollToElement('home')"  class="header__list_link lang-changeContent"></li>
+                <li onclick="scrollToElement('about')" class="header__list_link lang-changeContent"></li>
+                <li onclick="scrollToElement('skills')"  class="header__list_link lang-changeContent"></li>
+                <li onclick="scrollToElement('portfolio')"  class="header__list_link lang-changeContent"></li>
+                <li onclick="scrollToElement('contact')" class="header__list_link lang-changeContent"></li>
+            </ul>
+            <div class="lang">
+                <div class="lang__box" id="languaageBox">
+                    <!-- <img src="./images/lang/en.png" alt="" width="30" height="30">
+                    <p>EN</p> -->
+                </div>
+                <ul class="lang__list" id="languages">
+                    <!-- <li>
+                        <a class="lang__list_link" href="/?en" locale="ua">
+                            <img src="./images/lang/en.png" alt="" width="30" height="30">
+                            <p>UA</p>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="home" class="main">
+        <section class="container greeting">
+            <div class="greeting__left">
+                <div class="title" style="display: inline;">
+                    <div class="textBox" style="display: flex; gap: 10px;">
+                        <p class="lang-changeContent"></p>
+                        <span style="color: #0ef;" class="lang-changeContent" id="animateTitle"></span>
+                    </div>
+                </div>
+                <h2 class="greeting__left_subTitle lang-changeContent"></h2>
+                <ul class="greeting__left__list">
+                    <li>
+                        <a href="https://github.com/den4k-pr" class="greeting__left__list_link" style="background-image: url('./images/github.svg'); background-size: 35px;"></a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/WorkPlH" class="greeting__left__list_link" style="background-image: url('./images/telegram.svg'); background-size: 40px;"></a>
+                    </li>
+                </ul>
+                <div class="greeting__left__platforms">
+                    <p class="greeting__left__platforms_text">Tech Stack</p>
+                    <div class="greeting__left__platforms__box">
+                        <div class="greeting__left__platforms__box__images" id="techStackList">
+                            <!-- <img src="" width="40" height="40" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fotoBody">
+                <div class="foto">
+                    <img src="./images/myface.png" alt="" loading="eager">
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container box">
+                <div class="about__left">
+                    <img src="./images/myface.png" alt="My Face" width="200" height="200">
+                </div>
+                <div class="about__right">
+                    <h2 class="title" style="justify-content: left;"><p class="lang-changeContent"></p> <span class="lang-changeContent"></span></h2>
+                    <p class="text lang-changeContent"></p>
+                    <article class="about__right_article">
+                        <p class="text lang-changeContent"></p>
+                        <ul>
+                            <li class="lang-changeContent"></li>
+                            <li class="lang-changeContent"></li>
+                            <li class="lang-changeContent"></li>
+                            <li class="lang-changeContent"></li>
+                            <li class="lang-changeContent"></li>
+                        </ul>
+                        <p class="text lang-changeContent"></p>
+                    </article>
+                    <button class="button lang-changeContent" onclick="scrollToBottom()"></button>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="title"><p class="lang-changeContent"></p> <span style="display: initial" class="lang-changeContent"></span></h2>
+                <div class="skillsSections">
+                    <div class="skills__body">
+                        <h2 class="skills__body_title">Coding Skills</h2>
+                        <div class="skills__body__content" id="coding">
+                            <nav class="skills__body__content_section">
+                                <img src="" width="35" height="35" alt="Skill 1">
+                                <h3 class="skills__body__content_section_title"></h3>
+                            </nav>
+                        </div>
+                        <h2 class="skills__body_title">Backend Skills</h2>
+                        <div class="skills__body__content" id="backend">
+                            <nav class="skills__body__content_section">
+                                <img src="" width="35" height="35" alt="Skill 1">
+                                <h3 class="skills__body__content_section_title"></h3>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="skills__body">
+                        <h2 class="skills__body_title">Library and framework</h2>
+                        <div class="skills__body__content" id="library">
+                            <nav class="skills__body__content_section">
+                                <img src="" width="35" height="35" alt="Skill 1">
+                                <h3 class="skills__body__content_section_title"></h3>
+                            </nav>
+                        </div>
+                        <h2 class="skills__body_title">Build Tools</h2>
+                        <div class="skills__body__content" id="tools">
+                            <nav class="skills__body__content_section">
+                                <img src="" width="35" height="35" alt="Skill 1">
+                                <h3 class="skills__body__content_section_title"></h3>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="title"><p class="lang-changeContent"></p> <span style="display: initial" class="lang-changeContent"></span></h2>
+                <div class="portfolio__projects">
+                    <div class="portfolio__projects_section">
+                        <h3 class="portfolio__projects_section_title lang-changeContent"></h3>
+                        <nav class="portfolio__projects_section_box">
+                            <div class="portfolio__projects_partBody">
+                                <figure class="portfolio__projects_partBody_part" style="background-image: url(./images/drop.png);">
+                                    <div class="video_play_button"><img src="./images/click.svg" width="30" height="30" alt="Click"></div>
+                                    <figcaption class="portfolio__projects_partBody_part__content">
+                                        <a href="https://raftel-shop.vercel.app/" class="portfolio__projects_partBody_part__content_visit"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="portfolio__projects_partBody">
+                                <figure class="portfolio__projects_partBody_part" style="background-image: url(./images/market.png);">
+                                    <div class="video_play_button"><img src="./images/click.svg" width="30" height="30" alt="Click"></div>
+                                    <figcaption class="portfolio__projects_partBody_part__content">
+                                        <a href="https://catalog-gamma.vercel.app/" class="portfolio__projects_partBody_part__content_visit"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </nav>
+                        <h3 style="margin-top: 40px" class="portfolio__projects_section_title lang-changeContent"></h3>
+                        <nav class="portfolio__projects_section_box">
+                            <div class="portfolio__projects_partBody">
+                                <figure class="portfolio__projects_partBody_part" style="background-image: url(./images/company.png);">
+                                    <div class="video_play_button"><img src="./images/click.svg" width="30" height="30" alt="Click"></div>
+                                    <figcaption class="portfolio__projects_partBody_part__content">
+                                        <a href="https://company-eosin.vercel.app/" class="portfolio__projects_partBody_part__content_visit"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="portfolio__projects_partBody">
+                                <figure class="portfolio__projects_partBody_part" style="background-image: url(./images/boost.png);">
+                                    <div class="video_play_button"><img src="./images/click.svg" width="30" height="30" alt="Click"></div>
+                                    <figcaption class="portfolio__projects_partBody_part__content">
+                                        <a href="https://game-site-chi.vercel.app/" class="portfolio__projects_partBody_part__content_visit"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="title"><p class="lang-changeContent"></p> <span style="display: initial" class="lang-changeContent"></span></h2>
+                <form action="">
+                    <input placeholder="First Name" type="text" name="name" required>
+                    <input placeholder="Last Name" type="text" name="lastName" required>
+                    <input placeholder="Mobile" type="tel" name="tel" required>
+                    <input placeholder="Email" type="email" name="email" required>
+                    <textarea placeholder="Message" name="message" required></textarea>
+                    <button type="submit" class="button">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <p class="footer__text">
+            Copyright &copy; 2023 | All Rights Reserved.
+            </p>
+            <button onclick="scrollToTop()"></button>
+        </div>
+    </footer>
+</body>
+<script src="./scripts/language.js"></script>
+<script src="./scripts/techStack.js"></script>
+<script src="./scripts/skils.js"></script>
+<script src="./scripts/portfolio.js"></script>
+<script src="./scripts/main.js"></script>
+</html>
+        
