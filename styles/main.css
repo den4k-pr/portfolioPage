@@ -516,4 +516,10 @@
       grid-column: span 2;
     }
   }
+
+  @media(min-width: 970px) {
+    #library{
+      padding: 25px 25px 90px 25px;
+    }
+  }
   
