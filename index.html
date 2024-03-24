@@ -42,6 +42,12 @@
             </div>
         </div>
     </header>
+    <nav class="loader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span class="loading">Loading...</span>
+      </nav>
     <main id="home" class="main">
         <section class="container greeting">
             <div class="greeting__left">
@@ -187,14 +193,16 @@
         <section id="contact" class="contact">
             <div class="container">
                 <h2 class="title"><p class="lang-changeContent"></p> <span style="display: initial" class="lang-changeContent"></span></h2>
-                <form action="">
+                <form id="contact-form">
                     <input placeholder="First Name" type="text" name="name" required>
                     <input placeholder="Last Name" type="text" name="lastName" required>
                     <input placeholder="Mobile" type="tel" name="tel" required>
                     <input placeholder="Email" type="email" name="email" required>
                     <textarea placeholder="Message" name="message" required></textarea>
-                    <button type="submit" class="button">Send</button>
+                    <button type="submit" class="button lang-changeContent">Send</button>
                 </form>
+                <p class="message lang-changeContent" id="success-message" style="display: none;">Message sent successfully!</p>
+                <p class="messageErr lang-changeContent" id="error-message" style="display: none;">Failed to send message. Please try again later.</p>
             </div>
         </section>
     </main>
@@ -207,10 +215,12 @@
         </div>
     </footer>
 </body>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="./scripts/language.js"></script>
 <script src="./scripts/techStack.js"></script>
 <script src="./scripts/skils.js"></script>
 <script src="./scripts/portfolio.js"></script>
 <script src="./scripts/main.js"></script>
+<script src="./scripts/email.js"></script>
 </html>
         
