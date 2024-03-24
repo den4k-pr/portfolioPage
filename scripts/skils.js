@@ -1,6 +1,6 @@
 const codingArray = ["html", "css", "sass", "js", "typescript"];
 const backendArray = ["nodejs", "mongodb"];
-const libraryArray = ["react", "redux", "nextjs", "graphql", "gatsby"];
+const libraryArray = ["react", "redux", "nextjs", "graphql"];
 const toolsArray = ["webpack", "gulp"];
 
 const capitalizeFirstLetter = (word) => {
